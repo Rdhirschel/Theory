@@ -1,0 +1,1873 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="15.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProjectGuid>{D81E796F-C4A6-4760-8ABC-FD0C090C5CD4}</ProjectGuid>
+    <OutputType>WinExe</OutputType>
+    <RootNamespace>Theory</RootNamespace>
+    <AssemblyName>Theory</AssemblyName>
+    <TargetFrameworkVersion>v4.8</TargetFrameworkVersion>
+    <FileAlignment>512</FileAlignment>
+    <AutoGenerateBindingRedirects>true</AutoGenerateBindingRedirects>
+    <Deterministic>true</Deterministic>
+    <IsWebBootstrapper>false</IsWebBootstrapper>
+    <TargetFrameworkProfile />
+    <PublishUrl>C:\Users\hyrsl\OneDrive\שולחן העבודה\TheoryApp\</PublishUrl>
+    <Install>true</Install>
+    <InstallFrom>Disk</InstallFrom>
+    <UpdateEnabled>false</UpdateEnabled>
+    <UpdateMode>Foreground</UpdateMode>
+    <UpdateInterval>7</UpdateInterval>
+    <UpdateIntervalUnits>Days</UpdateIntervalUnits>
+    <UpdatePeriodically>false</UpdatePeriodically>
+    <UpdateRequired>false</UpdateRequired>
+    <MapFileExtensions>true</MapFileExtensions>
+    <ApplicationRevision>13</ApplicationRevision>
+    <ApplicationVersion>1.0.0.%2a</ApplicationVersion>
+    <UseApplicationTrust>false</UseApplicationTrust>
+    <PublishWizardCompleted>true</PublishWizardCompleted>
+    <BootstrapperEnabled>true</BootstrapperEnabled>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup>
+    <ManifestCertificateThumbprint>83669EE67E64D0639C348985C2CFDDC3EC5C7DD7</ManifestCertificateThumbprint>
+  </PropertyGroup>
+  <PropertyGroup>
+    <ManifestKeyFile>theoreticla_TemporaryKey.pfx</ManifestKeyFile>
+  </PropertyGroup>
+  <PropertyGroup>
+    <GenerateManifests>true</GenerateManifests>
+  </PropertyGroup>
+  <PropertyGroup>
+    <SignManifests>true</SignManifests>
+  </PropertyGroup>
+  <PropertyGroup>
+    <ApplicationIcon>TheoryAppIcon.ico</ApplicationIcon>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="System" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.DirectoryServices" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="Microsoft.CSharp" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Deployment" />
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Net.Http" />
+    <Reference Include="System.Windows.Forms" />
+    <Reference Include="System.Xml" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="TestFinish.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="TestFinish.Designer.cs">
+      <DependentUpon>TestFinish.cs</DependentUpon>
+    </Compile>
+    <Compile Include="TestForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="TestForm.Designer.cs">
+      <DependentUpon>TestForm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="TheoryApp.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="TheoryApp.Designer.cs">
+      <DependentUpon>TheoryApp.cs</DependentUpon>
+    </Compile>
+    <Compile Include="WrongQuestions.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="WrongQuestions.Designer.cs">
+      <DependentUpon>WrongQuestions.cs</DependentUpon>
+    </Compile>
+    <Compile Include="InfQuestion.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="InfQuestion.Designer.cs">
+      <DependentUpon>InfQuestion.cs</DependentUpon>
+    </Compile>
+    <Compile Include="MainMenu.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="MainMenu.Designer.cs">
+      <DependentUpon>MainMenu.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Program.cs" />
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="QuestionList.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="QuestionList.Designer.cs">
+      <DependentUpon>QuestionList.cs</DependentUpon>
+    </Compile>
+    <Compile Include="QuestionDesign.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="QuestionDesign.Designer.cs">
+      <DependentUpon>QuestionDesign.cs</DependentUpon>
+    </Compile>
+    <EmbeddedResource Include="TestFinish.resx">
+      <DependentUpon>TestFinish.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="TestForm.resx">
+      <DependentUpon>TestForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="TheoryApp.resx">
+      <DependentUpon>TheoryApp.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="WrongQuestions.resx">
+      <DependentUpon>WrongQuestions.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="InfQuestion.resx">
+      <DependentUpon>InfQuestion.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="MainMenu.resx">
+      <DependentUpon>MainMenu.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Properties\Resources.resx">
+      <Generator>ResXFileCodeGenerator</Generator>
+      <LastGenOutput>Resources.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <Compile Include="Properties\Resources.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Resources.resx</DependentUpon>
+      <DesignTime>True</DesignTime>
+    </Compile>
+    <EmbeddedResource Include="QuestionList.resx">
+      <DependentUpon>QuestionList.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="QuestionDesign.resx">
+      <DependentUpon>QuestionDesign.cs</DependentUpon>
+    </EmbeddedResource>
+    <None Include="Properties\Settings.settings">
+      <Generator>SettingsSingleFileGenerator</Generator>
+      <LastGenOutput>Settings.Designer.cs</LastGenOutput>
+    </None>
+    <Compile Include="Properties\Settings.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Settings.settings</DependentUpon>
+      <DesignTimeSharedInput>True</DesignTimeSharedInput>
+    </Compile>
+    <None Include="theoreticla_TemporaryKey.pfx" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="App.config" />
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="Data.txt">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Image Cool Theory Cool Maybe Cool Theory Cool\question_1001_img.png">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Image Cool Theory Cool Maybe Cool Theory Cool\question_1002_img.png">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Image Cool Theory Cool Maybe Cool Theory Cool\question_1004_img.png">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Image Cool Theory Cool Maybe Cool Theory Cool\question_1005_img.png">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Image Cool Theory Cool Maybe Cool Theory Cool\question_1006_img.png">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Image Cool Theory Cool Maybe Cool Theory Cool\question_1007_img.png">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Image Cool Theory Cool Maybe Cool Theory Cool\question_1009_img.png">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Image Cool Theory Cool Maybe Cool Theory Cool\question_100_img.png">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Image Cool Theory Cool Maybe Cool Theory Cool\question_1010_img.png">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Image Cool Theory Cool Maybe Cool Theory Cool\question_1017_img.png">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Image Cool Theory Cool Maybe Cool Theory Cool\question_101_img.png">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Image Cool Theory Cool Maybe Cool Theory Cool\question_1022_img.png">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Image Cool Theory Cool Maybe Cool Theory Cool\question_1023_img.png">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Image Cool Theory Cool Maybe Cool Theory Cool\question_1024_img.png">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Image Cool Theory Cool Maybe Cool Theory Cool\question_1027_img.png">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Image Cool Theory Cool Maybe Cool Theory Cool\question_1030_img.png">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Image Cool Theory Cool Maybe Cool Theory Cool\question_1033_img.png">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Image Cool Theory Cool Maybe Cool Theory Cool\question_1034_img.png">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Image Cool Theory Cool Maybe Cool Theory Cool\question_1035_img.png">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Image Cool Theory Cool Maybe Cool Theory Cool\question_1039_img.png">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Image Cool Theory Cool Maybe Cool Theory Cool\question_1040_img.png">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Image Cool Theory Cool Maybe Cool Theory Cool\question_1043_img.png">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Image Cool Theory Cool Maybe Cool Theory Cool\question_1044_img.png">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Image Cool Theory Cool Maybe Cool Theory Cool\question_1045_img.png">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Image Cool Theory Cool Maybe Cool Theory Cool\question_1046_img.png">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Image Cool Theory Cool Maybe Cool Theory Cool\question_1047_img.png">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Image Cool Theory Cool Maybe Cool Theory Cool\question_1048_img.png">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Image Cool Theory Cool Maybe Cool Theory Cool\question_1049_img.png">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Image Cool Theory Cool Maybe Cool Theory Cool\question_104_img.png">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Image Cool Theory Cool Maybe Cool Theory Cool\question_1050_img.png">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Image Cool Theory Cool Maybe Cool Theory Cool\question_1052_img.png">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Image Cool Theory Cool Maybe Cool Theory Cool\question_1055_img.png">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Image Cool Theory Cool Maybe Cool Theory Cool\question_1056_img.png">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Image Cool Theory Cool Maybe Cool Theory Cool\question_1059_img.png">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Image Cool Theory Cool Maybe Cool Theory Cool\question_105_img.png">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Image Cool Theory Cool Maybe Cool Theory Cool\question_1062_img.png">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Image Cool Theory Cool Maybe Cool Theory Cool\question_1063_img.png">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Image Cool Theory Cool Maybe Cool Theory Cool\question_1064_img.png">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Image Cool Theory Cool Maybe Cool Theory Cool\question_1068_img.png">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Image Cool Theory Cool Maybe Cool Theory Cool\question_106_img.png">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Image Cool Theory Cool Maybe Cool Theory Cool\question_1073_img.png">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Image Cool Theory Cool Maybe Cool Theory Cool\question_1075_img.png">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Image Cool Theory Cool Maybe Cool Theory Cool\question_1076_img.png">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Image Cool Theory Cool Maybe Cool Theory Cool\question_1079_img.png">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Image Cool Theory Cool Maybe Cool Theory Cool\question_1082_img.png">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Image Cool Theory Cool Maybe Cool Theory Cool\question_1083_img.png">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Image Cool Theory Cool Maybe Cool Theory Cool\question_1086_img.png">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Image Cool Theory Cool Maybe Cool Theory Cool\question_1087_img.png">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Image Cool Theory Cool Maybe Cool Theory Cool\question_108_img.png">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Image Cool Theory Cool Maybe Cool Theory Cool\question_1096_img.png">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Image Cool Theory Cool Maybe Cool Theory Cool\question_1097_img.png">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Image Cool Theory Cool Maybe Cool Theory Cool\question_1098_img.png">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Image Cool Theory Cool Maybe Cool Theory Cool\question_1099_img.png">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Image Cool Theory Cool Maybe Cool Theory Cool\question_1100_img.png">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Image Cool Theory Cool Maybe Cool Theory Cool\question_1103_img.png">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Image Cool Theory Cool Maybe Cool Theory Cool\question_1104_img.png">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Image Cool Theory Cool Maybe Cool Theory Cool\question_1105_img.png">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Image Cool Theory Cool Maybe Cool Theory Cool\question_1109_img.png">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Image Cool Theory Cool Maybe Cool Theory Cool\question_110_img.png">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Image Cool Theory Cool Maybe Cool Theory Cool\question_1112_img.png">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Image Cool Theory Cool Maybe Cool Theory Cool\question_1113_img.png">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Image Cool Theory Cool Maybe Cool Theory Cool\question_1116_img.png">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Image Cool Theory Cool Maybe Cool Theory Cool\question_1117_img.png">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Image Cool Theory Cool Maybe Cool Theory Cool\question_1118_img.png">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Image Cool Theory Cool Maybe Cool Theory Cool\question_1121_img.png">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Image Cool Theory Cool Maybe Cool Theory Cool\question_1124_img.png">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Image Cool Theory Cool Maybe Cool Theory Cool\question_1128_img.png">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Image Cool Theory Cool Maybe Cool Theory Cool\question_1129_img.png">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Image Cool Theory Cool Maybe Cool Theory Cool\question_1130_img.png">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Image Cool Theory Cool Maybe Cool Theory Cool\question_1132_img.png">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Image Cool Theory Cool Maybe Cool Theory Cool\question_1134_img.png">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Image Cool Theory Cool Maybe Cool Theory Cool\question_1136_img.png">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Image Cool Theory Cool Maybe Cool Theory Cool\question_1137_img.png">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Image Cool Theory Cool Maybe Cool Theory Cool\question_1138_img.png">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Image Cool Theory Cool Maybe Cool Theory Cool\question_1139_img.png">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Image Cool Theory Cool Maybe Cool Theory Cool\question_113_img.png">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Image Cool Theory Cool Maybe Cool Theory Cool\question_1140_img.png">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Image Cool Theory Cool Maybe Cool Theory Cool\question_1144_img.png">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Image Cool Theory Cool Maybe Cool Theory Cool\question_1145_img.png">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Image Cool Theory Cool Maybe Cool Theory Cool\question_114_img.png">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Image Cool Theory Cool Maybe Cool Theory Cool\question_1152_img.png">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Image Cool Theory Cool Maybe Cool Theory Cool\question_1153_img.png">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Image Cool Theory Cool Maybe Cool Theory Cool\question_1154_img.png">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Image Cool Theory Cool Maybe Cool Theory Cool\question_1155_img.png">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Image Cool Theory Cool Maybe Cool Theory Cool\question_1157_img.png">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Image Cool Theory Cool Maybe Cool Theory Cool\question_1159_img.png">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Image Cool Theory Cool Maybe Cool Theory Cool\question_115_img.png">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Image Cool Theory Cool Maybe Cool Theory Cool\question_1160_img.png">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Image Cool Theory Cool Maybe Cool Theory Cool\question_1161_img.png">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Image Cool Theory Cool Maybe Cool Theory Cool\question_1164_img.png">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Image Cool Theory Cool Maybe Cool Theory Cool\question_1165_img.png">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Image Cool Theory Cool Maybe Cool Theory Cool\question_1166_img.png">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Image Cool Theory Cool Maybe Cool Theory Cool\question_1168_img.png">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Image Cool Theory Cool Maybe Cool Theory Cool\question_1173_img.png">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Image Cool Theory Cool Maybe Cool Theory Cool\question_1175_img.png">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Image Cool Theory Cool Maybe Cool Theory Cool\question_1176_img.png">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Image Cool Theory Cool Maybe Cool Theory Cool\question_1180_img.png">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Image Cool Theory Cool Maybe Cool Theory Cool\question_1181_img.png">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Image Cool Theory Cool Maybe Cool Theory Cool\question_1183_img.png">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Image Cool Theory Cool Maybe Cool Theory Cool\question_1185_img.png">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Image Cool Theory Cool Maybe Cool Theory Cool\question_1186_img.png">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Image Cool Theory Cool Maybe Cool Theory Cool\question_1190_img.png">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Image Cool Theory Cool Maybe Cool Theory Cool\question_1193_img.png">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Image Cool Theory Cool Maybe Cool Theory Cool\question_1194_img.png">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Image Cool Theory Cool Maybe Cool Theory Cool\question_1195_img.png">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Image Cool Theory Cool Maybe Cool Theory Cool\question_1197_img.png">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Image Cool Theory Cool Maybe Cool Theory Cool\question_1199_img.png">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Image Cool Theory Cool Maybe Cool Theory Cool\question_1202_img.png">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Image Cool Theory Cool Maybe Cool Theory Cool\question_1204_img.png">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Image Cool Theory Cool Maybe Cool Theory Cool\question_1205_img.png">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Image Cool Theory Cool Maybe Cool Theory Cool\question_1207_img.png">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Image Cool Theory Cool Maybe Cool Theory Cool\question_1210_img.png">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Image Cool Theory Cool Maybe Cool Theory Cool\question_1212_img.png">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Image Cool Theory Cool Maybe Cool Theory Cool\question_1214_img.png">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Image Cool Theory Cool Maybe Cool Theory Cool\question_1217_img.png">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Image Cool Theory Cool Maybe Cool Theory Cool\question_121_img.png">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Image Cool Theory Cool Maybe Cool Theory Cool\question_1220_img.png">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Image Cool Theory Cool Maybe Cool Theory Cool\question_1222_img.png">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Image Cool Theory Cool Maybe Cool Theory Cool\question_1224_img.png">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Image Cool Theory Cool Maybe Cool Theory Cool\question_1229_img.png">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Image Cool Theory Cool Maybe Cool Theory Cool\question_1231_img.png">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Image Cool Theory Cool Maybe Cool Theory Cool\question_1238_img.png">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Image Cool Theory Cool Maybe Cool Theory Cool\question_1239_img.png">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Image Cool Theory Cool Maybe Cool Theory Cool\question_1240_img.png">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Image Cool Theory Cool Maybe Cool Theory Cool\question_1241_img.png">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Image Cool Theory Cool Maybe Cool Theory Cool\question_1246_img.png">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Image Cool Theory Cool Maybe Cool Theory Cool\question_1247_img.png">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Image Cool Theory Cool Maybe Cool Theory Cool\question_1249_img.png">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Image Cool Theory Cool Maybe Cool Theory Cool\question_124_img.png">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Image Cool Theory Cool Maybe Cool Theory Cool\question_1251_img.png">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Image Cool Theory Cool Maybe Cool Theory Cool\question_1252_img.png">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Image Cool Theory Cool Maybe Cool Theory Cool\question_1253_img.png">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Image Cool Theory Cool Maybe Cool Theory Cool\question_1258_img.png">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Image Cool Theory Cool Maybe Cool Theory Cool\question_1259_img.png">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Image Cool Theory Cool Maybe Cool Theory Cool\question_1261_img.png">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Image Cool Theory Cool Maybe Cool Theory Cool\question_1262_img.png">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Image Cool Theory Cool Maybe Cool Theory Cool\question_1266_img.png">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Image Cool Theory Cool Maybe Cool Theory Cool\question_1267_img.png">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Image Cool Theory Cool Maybe Cool Theory Cool\question_1268_img.png">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Image Cool Theory Cool Maybe Cool Theory Cool\question_1269_img.png">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Image Cool Theory Cool Maybe Cool Theory Cool\question_1273_img.png">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Image Cool Theory Cool Maybe Cool Theory Cool\question_129_img.png">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Image Cool Theory Cool Maybe Cool Theory Cool\question_12_img.png">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Image Cool Theory Cool Maybe Cool Theory Cool\question_130_img.png">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Image Cool Theory Cool Maybe Cool Theory Cool\question_131_img.png">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Image Cool Theory Cool Maybe Cool Theory Cool\question_132_img.png">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Image Cool Theory Cool Maybe Cool Theory Cool\question_133_img.png">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Image Cool Theory Cool Maybe Cool Theory Cool\question_136_img.png">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Image Cool Theory Cool Maybe Cool Theory Cool\question_137_img.png">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Image Cool Theory Cool Maybe Cool Theory Cool\question_139_img.png">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Image Cool Theory Cool Maybe Cool Theory Cool\question_13_img.png">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Image Cool Theory Cool Maybe Cool Theory Cool\question_140_img.png">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Image Cool Theory Cool Maybe Cool Theory Cool\question_142_img.png">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Image Cool Theory Cool Maybe Cool Theory Cool\question_143_img.png">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Image Cool Theory Cool Maybe Cool Theory Cool\question_144_img.png">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Image Cool Theory Cool Maybe Cool Theory Cool\question_145_img.png">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Image Cool Theory Cool Maybe Cool Theory Cool\question_149_img.png">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Image Cool Theory Cool Maybe Cool Theory Cool\question_14_img.png">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Image Cool Theory Cool Maybe Cool Theory Cool\question_150_img.png">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Image Cool Theory Cool Maybe Cool Theory Cool\question_153_img.png">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Image Cool Theory Cool Maybe Cool Theory Cool\question_155_img.png">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Image Cool Theory Cool Maybe Cool Theory Cool\question_158_img.png">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Image Cool Theory Cool Maybe Cool Theory Cool\question_162_img.png">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Image Cool Theory Cool Maybe Cool Theory Cool\question_166_img.png">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Image Cool Theory Cool Maybe Cool Theory Cool\question_168_img.png">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Image Cool Theory Cool Maybe Cool Theory Cool\question_169_img.png">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Image Cool Theory Cool Maybe Cool Theory Cool\question_171_img.png">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Image Cool Theory Cool Maybe Cool Theory Cool\question_178_img.png">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Image Cool Theory Cool Maybe Cool Theory Cool\question_182_img.png">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Image Cool Theory Cool Maybe Cool Theory Cool\question_184_img.png">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Image Cool Theory Cool Maybe Cool Theory Cool\question_186_img.png">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Image Cool Theory Cool Maybe Cool Theory Cool\question_187_img.png">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Image Cool Theory Cool Maybe Cool Theory Cool\question_188_img.png">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Image Cool Theory Cool Maybe Cool Theory Cool\question_189_img.png">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Image Cool Theory Cool Maybe Cool Theory Cool\question_18_img.png">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Image Cool Theory Cool Maybe Cool Theory Cool\question_190_img.png">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Image Cool Theory Cool Maybe Cool Theory Cool\question_192_img.png">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Image Cool Theory Cool Maybe Cool Theory Cool\question_193_img.png">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Image Cool Theory Cool Maybe Cool Theory Cool\question_196_img.png">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Image Cool Theory Cool Maybe Cool Theory Cool\question_197_img.png">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Image Cool Theory Cool Maybe Cool Theory Cool\question_199_img.png">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Image Cool Theory Cool Maybe Cool Theory Cool\question_1_img.png">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Image Cool Theory Cool Maybe Cool Theory Cool\question_1_img_1.png">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Image Cool Theory Cool Maybe Cool Theory Cool\question_202_img.png">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Image Cool Theory Cool Maybe Cool Theory Cool\question_203_img.png">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Image Cool Theory Cool Maybe Cool Theory Cool\question_210_img.png">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Image Cool Theory Cool Maybe Cool Theory Cool\question_212_img.png">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Image Cool Theory Cool Maybe Cool Theory Cool\question_213_img.png">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Image Cool Theory Cool Maybe Cool Theory Cool\question_215_img.png">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Image Cool Theory Cool Maybe Cool Theory Cool\question_219_img.png">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Image Cool Theory Cool Maybe Cool Theory Cool\question_21_img.png">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Image Cool Theory Cool Maybe Cool Theory Cool\question_220_img.png">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Image Cool Theory Cool Maybe Cool Theory Cool\question_224_img.png">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Image Cool Theory Cool Maybe Cool Theory Cool\question_227_img.png">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Image Cool Theory Cool Maybe Cool Theory Cool\question_233_img.png">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Image Cool Theory Cool Maybe Cool Theory Cool\question_235_img.png">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Image Cool Theory Cool Maybe Cool Theory Cool\question_236_img.png">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Image Cool Theory Cool Maybe Cool Theory Cool\question_237_img.png">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Image Cool Theory Cool Maybe Cool Theory Cool\question_238_img.png">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Image Cool Theory Cool Maybe Cool Theory Cool\question_23_img.png">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Image Cool Theory Cool Maybe Cool Theory Cool\question_241_img.png">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Image Cool Theory Cool Maybe Cool Theory Cool\question_242_img.png">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Image Cool Theory Cool Maybe Cool Theory Cool\question_243_img.png">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Image Cool Theory Cool Maybe Cool Theory Cool\question_246_img.png">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Image Cool Theory Cool Maybe Cool Theory Cool\question_247_img.png">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Image Cool Theory Cool Maybe Cool Theory Cool\question_249_img.png">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Image Cool Theory Cool Maybe Cool Theory Cool\question_24_img.png">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Image Cool Theory Cool Maybe Cool Theory Cool\question_255_img.png">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Image Cool Theory Cool Maybe Cool Theory Cool\question_258_img.png">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Image Cool Theory Cool Maybe Cool Theory Cool\question_259_img.png">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Image Cool Theory Cool Maybe Cool Theory Cool\question_260_img.png">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Image Cool Theory Cool Maybe Cool Theory Cool\question_265_img.png">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Image Cool Theory Cool Maybe Cool Theory Cool\question_267_img.png">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Image Cool Theory Cool Maybe Cool Theory Cool\question_268_img.png">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Image Cool Theory Cool Maybe Cool Theory Cool\question_269_img.png">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Image Cool Theory Cool Maybe Cool Theory Cool\question_26_img.png">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Image Cool Theory Cool Maybe Cool Theory Cool\question_274_img.png">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Image Cool Theory Cool Maybe Cool Theory Cool\question_275_img.png">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Image Cool Theory Cool Maybe Cool Theory Cool\question_27_img.png">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Image Cool Theory Cool Maybe Cool Theory Cool\question_284_img.png">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Image Cool Theory Cool Maybe Cool Theory Cool\question_285_img.png">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Image Cool Theory Cool Maybe Cool Theory Cool\question_288_img.png">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Image Cool Theory Cool Maybe Cool Theory Cool\question_291_img.png">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Image Cool Theory Cool Maybe Cool Theory Cool\question_292_img.png">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Image Cool Theory Cool Maybe Cool Theory Cool\question_295_img.png">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Image Cool Theory Cool Maybe Cool Theory Cool\question_297_img.png">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Image Cool Theory Cool Maybe Cool Theory Cool\question_298_img.png">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Image Cool Theory Cool Maybe Cool Theory Cool\question_29_img.png">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Image Cool Theory Cool Maybe Cool Theory Cool\question_2_img.png">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Image Cool Theory Cool Maybe Cool Theory Cool\question_302_img.png">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Image Cool Theory Cool Maybe Cool Theory Cool\question_304_img.png">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Image Cool Theory Cool Maybe Cool Theory Cool\question_307_img.png">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Image Cool Theory Cool Maybe Cool Theory Cool\question_308_img.png">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Image Cool Theory Cool Maybe Cool Theory Cool\question_309_img.png">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Image Cool Theory Cool Maybe Cool Theory Cool\question_314_img.png">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Image Cool Theory Cool Maybe Cool Theory Cool\question_315_img.png">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Image Cool Theory Cool Maybe Cool Theory Cool\question_316_img.png">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Image Cool Theory Cool Maybe Cool Theory Cool\question_317_img.png">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Image Cool Theory Cool Maybe Cool Theory Cool\question_320_img.png">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Image Cool Theory Cool Maybe Cool Theory Cool\question_321_img.png">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Image Cool Theory Cool Maybe Cool Theory Cool\question_323_img.png">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Image Cool Theory Cool Maybe Cool Theory Cool\question_325_img.png">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Image Cool Theory Cool Maybe Cool Theory Cool\question_328_img.png">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Image Cool Theory Cool Maybe Cool Theory Cool\question_32_img.png">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Image Cool Theory Cool Maybe Cool Theory Cool\question_330_img.png">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Image Cool Theory Cool Maybe Cool Theory Cool\question_336_img.png">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Image Cool Theory Cool Maybe Cool Theory Cool\question_337_img.png">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Image Cool Theory Cool Maybe Cool Theory Cool\question_339_img.png">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Image Cool Theory Cool Maybe Cool Theory Cool\question_33_img.png">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Image Cool Theory Cool Maybe Cool Theory Cool\question_341_img.png">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Image Cool Theory Cool Maybe Cool Theory Cool\question_342_img.png">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Image Cool Theory Cool Maybe Cool Theory Cool\question_345_img.png">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Image Cool Theory Cool Maybe Cool Theory Cool\question_348_img.png">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Image Cool Theory Cool Maybe Cool Theory Cool\question_350_img.png">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Image Cool Theory Cool Maybe Cool Theory Cool\question_35_img.png">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Image Cool Theory Cool Maybe Cool Theory Cool\question_360_img.png">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Image Cool Theory Cool Maybe Cool Theory Cool\question_362_img.png">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Image Cool Theory Cool Maybe Cool Theory Cool\question_366_img.png">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Image Cool Theory Cool Maybe Cool Theory Cool\question_369_img.png">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Image Cool Theory Cool Maybe Cool Theory Cool\question_370_img.png">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Image Cool Theory Cool Maybe Cool Theory Cool\question_375_img.png">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Image Cool Theory Cool Maybe Cool Theory Cool\question_376_img.png">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Image Cool Theory Cool Maybe Cool Theory Cool\question_377_img.png">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Image Cool Theory Cool Maybe Cool Theory Cool\question_379_img.png">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Image Cool Theory Cool Maybe Cool Theory Cool\question_37_img.png">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Image Cool Theory Cool Maybe Cool Theory Cool\question_381_img.png">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Image Cool Theory Cool Maybe Cool Theory Cool\question_384_img.png">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Image Cool Theory Cool Maybe Cool Theory Cool\question_385_img.png">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Image Cool Theory Cool Maybe Cool Theory Cool\question_38_img.png">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Image Cool Theory Cool Maybe Cool Theory Cool\question_391_img.png">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Image Cool Theory Cool Maybe Cool Theory Cool\question_392_img.png">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Image Cool Theory Cool Maybe Cool Theory Cool\question_393_img.png">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Image Cool Theory Cool Maybe Cool Theory Cool\question_395_img.png">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Image Cool Theory Cool Maybe Cool Theory Cool\question_396_img.png">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Image Cool Theory Cool Maybe Cool Theory Cool\question_398_img.png">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Image Cool Theory Cool Maybe Cool Theory Cool\question_3_img.png">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Image Cool Theory Cool Maybe Cool Theory Cool\question_405_img.png">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Image Cool Theory Cool Maybe Cool Theory Cool\question_408_img.png">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Image Cool Theory Cool Maybe Cool Theory Cool\question_412_img.png">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Image Cool Theory Cool Maybe Cool Theory Cool\question_413_img.png">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Image Cool Theory Cool Maybe Cool Theory Cool\question_417_img.png">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Image Cool Theory Cool Maybe Cool Theory Cool\question_420_img.png">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Image Cool Theory Cool Maybe Cool Theory Cool\question_424_img.png">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Image Cool Theory Cool Maybe Cool Theory Cool\question_425_img.png">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Image Cool Theory Cool Maybe Cool Theory Cool\question_426_img.png">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Image Cool Theory Cool Maybe Cool Theory Cool\question_427_img.png">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Image Cool Theory Cool Maybe Cool Theory Cool\question_42_img.png">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Image Cool Theory Cool Maybe Cool Theory Cool\question_432_img.png">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Image Cool Theory Cool Maybe Cool Theory Cool\question_434_img.png">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Image Cool Theory Cool Maybe Cool Theory Cool\question_439_img.png">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Image Cool Theory Cool Maybe Cool Theory Cool\question_43_img.png">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Image Cool Theory Cool Maybe Cool Theory Cool\question_440_img.png">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Image Cool Theory Cool Maybe Cool Theory Cool\question_442_img.png">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Image Cool Theory Cool Maybe Cool Theory Cool\question_445_img.png">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Image Cool Theory Cool Maybe Cool Theory Cool\question_446_img.png">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Image Cool Theory Cool Maybe Cool Theory Cool\question_447_img.png">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Image Cool Theory Cool Maybe Cool Theory Cool\question_449_img.png">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Image Cool Theory Cool Maybe Cool Theory Cool\question_451_img.png">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Image Cool Theory Cool Maybe Cool Theory Cool\question_452_img.png">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Image Cool Theory Cool Maybe Cool Theory Cool\question_453_img.png">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Image Cool Theory Cool Maybe Cool Theory Cool\question_454_img.png">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Image Cool Theory Cool Maybe Cool Theory Cool\question_455_img.png">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Image Cool Theory Cool Maybe Cool Theory Cool\question_456_img.png">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Image Cool Theory Cool Maybe Cool Theory Cool\question_458_img.png">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Image Cool Theory Cool Maybe Cool Theory Cool\question_460_img.png">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Image Cool Theory Cool Maybe Cool Theory Cool\question_463_img.png">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Image Cool Theory Cool Maybe Cool Theory Cool\question_464_img.png">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Image Cool Theory Cool Maybe Cool Theory Cool\question_465_img.png">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Image Cool Theory Cool Maybe Cool Theory Cool\question_469_img.png">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Image Cool Theory Cool Maybe Cool Theory Cool\question_471_img.png">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Image Cool Theory Cool Maybe Cool Theory Cool\question_472_img.png">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Image Cool Theory Cool Maybe Cool Theory Cool\question_474_img.png">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Image Cool Theory Cool Maybe Cool Theory Cool\question_476_img.png">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Image Cool Theory Cool Maybe Cool Theory Cool\question_477_img.png">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Image Cool Theory Cool Maybe Cool Theory Cool\question_47_img.png">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Image Cool Theory Cool Maybe Cool Theory Cool\question_481_img.png">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Image Cool Theory Cool Maybe Cool Theory Cool\question_482_img.png">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Image Cool Theory Cool Maybe Cool Theory Cool\question_489_img.png">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Image Cool Theory Cool Maybe Cool Theory Cool\question_490_img.png">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Image Cool Theory Cool Maybe Cool Theory Cool\question_493_img.png">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Image Cool Theory Cool Maybe Cool Theory Cool\question_497_img.png">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Image Cool Theory Cool Maybe Cool Theory Cool\question_498_img.png">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Image Cool Theory Cool Maybe Cool Theory Cool\question_504_img.png">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Image Cool Theory Cool Maybe Cool Theory Cool\question_506_img.png">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Image Cool Theory Cool Maybe Cool Theory Cool\question_507_img.png">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Image Cool Theory Cool Maybe Cool Theory Cool\question_50_img.png">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Image Cool Theory Cool Maybe Cool Theory Cool\question_511_img.png">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Image Cool Theory Cool Maybe Cool Theory Cool\question_512_img.png">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Image Cool Theory Cool Maybe Cool Theory Cool\question_517_img.png">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Image Cool Theory Cool Maybe Cool Theory Cool\question_524_img.png">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Image Cool Theory Cool Maybe Cool Theory Cool\question_526_img.png">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Image Cool Theory Cool Maybe Cool Theory Cool\question_528_img.png">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Image Cool Theory Cool Maybe Cool Theory Cool\question_533_img.png">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Image Cool Theory Cool Maybe Cool Theory Cool\question_534_img.png">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Image Cool Theory Cool Maybe Cool Theory Cool\question_537_img.png">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Image Cool Theory Cool Maybe Cool Theory Cool\question_543_img.png">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Image Cool Theory Cool Maybe Cool Theory Cool\question_544_img.png">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Image Cool Theory Cool Maybe Cool Theory Cool\question_546_img.png">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Image Cool Theory Cool Maybe Cool Theory Cool\question_547_img.png">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Image Cool Theory Cool Maybe Cool Theory Cool\question_54_img.png">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Image Cool Theory Cool Maybe Cool Theory Cool\question_550_img.png">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Image Cool Theory Cool Maybe Cool Theory Cool\question_551_img.png">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Image Cool Theory Cool Maybe Cool Theory Cool\question_553_img.png">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Image Cool Theory Cool Maybe Cool Theory Cool\question_554_img.png">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Image Cool Theory Cool Maybe Cool Theory Cool\question_563_img.png">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Image Cool Theory Cool Maybe Cool Theory Cool\question_564_img.png">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Image Cool Theory Cool Maybe Cool Theory Cool\question_569_img.png">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Image Cool Theory Cool Maybe Cool Theory Cool\question_56_img.png">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Image Cool Theory Cool Maybe Cool Theory Cool\question_571_img.png">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Image Cool Theory Cool Maybe Cool Theory Cool\question_573_img.png">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Image Cool Theory Cool Maybe Cool Theory Cool\question_578_img.png">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Image Cool Theory Cool Maybe Cool Theory Cool\question_579_img.png">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Image Cool Theory Cool Maybe Cool Theory Cool\question_57_img.png">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Image Cool Theory Cool Maybe Cool Theory Cool\question_581_img.png">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Image Cool Theory Cool Maybe Cool Theory Cool\question_583_img.png">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Image Cool Theory Cool Maybe Cool Theory Cool\question_584_img.png">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Image Cool Theory Cool Maybe Cool Theory Cool\question_587_img.png">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Image Cool Theory Cool Maybe Cool Theory Cool\question_58_img.png">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Image Cool Theory Cool Maybe Cool Theory Cool\question_590_img.png">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Image Cool Theory Cool Maybe Cool Theory Cool\question_592_img.png">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Image Cool Theory Cool Maybe Cool Theory Cool\question_593_img.png">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Image Cool Theory Cool Maybe Cool Theory Cool\question_596_img.png">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Image Cool Theory Cool Maybe Cool Theory Cool\question_597_img.png">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Image Cool Theory Cool Maybe Cool Theory Cool\question_598_img.png">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Image Cool Theory Cool Maybe Cool Theory Cool\question_599_img.png">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Image Cool Theory Cool Maybe Cool Theory Cool\question_600_img.png">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Image Cool Theory Cool Maybe Cool Theory Cool\question_607_img.png">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Image Cool Theory Cool Maybe Cool Theory Cool\question_609_img.png">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Image Cool Theory Cool Maybe Cool Theory Cool\question_60_img.png">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Image Cool Theory Cool Maybe Cool Theory Cool\question_611_img.png">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Image Cool Theory Cool Maybe Cool Theory Cool\question_612_img.png">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Image Cool Theory Cool Maybe Cool Theory Cool\question_616_img.png">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Image Cool Theory Cool Maybe Cool Theory Cool\question_617_img.png">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Image Cool Theory Cool Maybe Cool Theory Cool\question_619_img.png">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Image Cool Theory Cool Maybe Cool Theory Cool\question_620_img.png">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Image Cool Theory Cool Maybe Cool Theory Cool\question_623_img.png">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Image Cool Theory Cool Maybe Cool Theory Cool\question_630_img.png">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Image Cool Theory Cool Maybe Cool Theory Cool\question_633_img.png">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Image Cool Theory Cool Maybe Cool Theory Cool\question_635_img.png">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Image Cool Theory Cool Maybe Cool Theory Cool\question_638_img.png">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Image Cool Theory Cool Maybe Cool Theory Cool\question_640_img.png">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Image Cool Theory Cool Maybe Cool Theory Cool\question_641_img.png">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Image Cool Theory Cool Maybe Cool Theory Cool\question_644_img.png">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Image Cool Theory Cool Maybe Cool Theory Cool\question_645_img.png">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Image Cool Theory Cool Maybe Cool Theory Cool\question_650_img.png">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Image Cool Theory Cool Maybe Cool Theory Cool\question_651_img.png">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Image Cool Theory Cool Maybe Cool Theory Cool\question_653_img.png">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Image Cool Theory Cool Maybe Cool Theory Cool\question_656_img.png">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Image Cool Theory Cool Maybe Cool Theory Cool\question_663_img.png">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Image Cool Theory Cool Maybe Cool Theory Cool\question_664_img.png">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Image Cool Theory Cool Maybe Cool Theory Cool\question_665_img.png">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Image Cool Theory Cool Maybe Cool Theory Cool\question_666_img.png">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Image Cool Theory Cool Maybe Cool Theory Cool\question_672_img.png">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Image Cool Theory Cool Maybe Cool Theory Cool\question_673_img.png">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Image Cool Theory Cool Maybe Cool Theory Cool\question_674_img.png">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Image Cool Theory Cool Maybe Cool Theory Cool\question_679_img.png">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Image Cool Theory Cool Maybe Cool Theory Cool\question_67_img.png">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Image Cool Theory Cool Maybe Cool Theory Cool\question_682_img.png">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Image Cool Theory Cool Maybe Cool Theory Cool\question_684_img.png">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Image Cool Theory Cool Maybe Cool Theory Cool\question_687_img.png">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Image Cool Theory Cool Maybe Cool Theory Cool\question_68_img.png">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Image Cool Theory Cool Maybe Cool Theory Cool\question_690_img.png">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Image Cool Theory Cool Maybe Cool Theory Cool\question_696_img.png">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Image Cool Theory Cool Maybe Cool Theory Cool\question_697_img.png">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Image Cool Theory Cool Maybe Cool Theory Cool\question_698_img.png">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Image Cool Theory Cool Maybe Cool Theory Cool\question_69_img.png">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Image Cool Theory Cool Maybe Cool Theory Cool\question_700_img.png">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Image Cool Theory Cool Maybe Cool Theory Cool\question_701_img.png">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Image Cool Theory Cool Maybe Cool Theory Cool\question_702_img.png">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Image Cool Theory Cool Maybe Cool Theory Cool\question_704_img.png">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Image Cool Theory Cool Maybe Cool Theory Cool\question_706_img.png">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Image Cool Theory Cool Maybe Cool Theory Cool\question_707_img.png">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Image Cool Theory Cool Maybe Cool Theory Cool\question_709_img.png">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Image Cool Theory Cool Maybe Cool Theory Cool\question_712_img.png">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Image Cool Theory Cool Maybe Cool Theory Cool\question_714_img.png">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Image Cool Theory Cool Maybe Cool Theory Cool\question_715_img.png">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Image Cool Theory Cool Maybe Cool Theory Cool\question_716_img.png">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Image Cool Theory Cool Maybe Cool Theory Cool\question_718_img.png">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Image Cool Theory Cool Maybe Cool Theory Cool\question_71_img.png">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Image Cool Theory Cool Maybe Cool Theory Cool\question_724_img.png">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Image Cool Theory Cool Maybe Cool Theory Cool\question_726_img.png">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Image Cool Theory Cool Maybe Cool Theory Cool\question_728_img.png">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Image Cool Theory Cool Maybe Cool Theory Cool\question_729_img.png">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Image Cool Theory Cool Maybe Cool Theory Cool\question_730_img.png">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Image Cool Theory Cool Maybe Cool Theory Cool\question_734_img.png">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Image Cool Theory Cool Maybe Cool Theory Cool\question_737_img.png">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Image Cool Theory Cool Maybe Cool Theory Cool\question_738_img.png">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Image Cool Theory Cool Maybe Cool Theory Cool\question_742_img.png">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Image Cool Theory Cool Maybe Cool Theory Cool\question_745_img.png">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Image Cool Theory Cool Maybe Cool Theory Cool\question_749_img.png">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Image Cool Theory Cool Maybe Cool Theory Cool\question_751_img.png">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Image Cool Theory Cool Maybe Cool Theory Cool\question_753_img.png">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Image Cool Theory Cool Maybe Cool Theory Cool\question_754_img.png">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Image Cool Theory Cool Maybe Cool Theory Cool\question_755_img.png">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Image Cool Theory Cool Maybe Cool Theory Cool\question_756_img.png">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Image Cool Theory Cool Maybe Cool Theory Cool\question_758_img.png">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Image Cool Theory Cool Maybe Cool Theory Cool\question_759_img.png">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Image Cool Theory Cool Maybe Cool Theory Cool\question_75_img.png">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Image Cool Theory Cool Maybe Cool Theory Cool\question_762_img.png">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Image Cool Theory Cool Maybe Cool Theory Cool\question_768_img.png">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Image Cool Theory Cool Maybe Cool Theory Cool\question_769_img.png">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Image Cool Theory Cool Maybe Cool Theory Cool\question_76_img.png">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Image Cool Theory Cool Maybe Cool Theory Cool\question_771_img.png">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Image Cool Theory Cool Maybe Cool Theory Cool\question_773_img.png">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Image Cool Theory Cool Maybe Cool Theory Cool\question_774_img.png">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Image Cool Theory Cool Maybe Cool Theory Cool\question_777_img.png">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Image Cool Theory Cool Maybe Cool Theory Cool\question_778_img.png">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Image Cool Theory Cool Maybe Cool Theory Cool\question_779_img.png">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Image Cool Theory Cool Maybe Cool Theory Cool\question_77_img.png">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Image Cool Theory Cool Maybe Cool Theory Cool\question_781_img.png">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Image Cool Theory Cool Maybe Cool Theory Cool\question_782_img.png">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Image Cool Theory Cool Maybe Cool Theory Cool\question_787_img.png">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Image Cool Theory Cool Maybe Cool Theory Cool\question_788_img.png">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Image Cool Theory Cool Maybe Cool Theory Cool\question_78_img.png">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Image Cool Theory Cool Maybe Cool Theory Cool\question_790_img.png">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Image Cool Theory Cool Maybe Cool Theory Cool\question_793_img.png">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Image Cool Theory Cool Maybe Cool Theory Cool\question_797_img.png">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Image Cool Theory Cool Maybe Cool Theory Cool\question_799_img.png">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Image Cool Theory Cool Maybe Cool Theory Cool\question_801_img.png">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Image Cool Theory Cool Maybe Cool Theory Cool\question_802_img.png">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Image Cool Theory Cool Maybe Cool Theory Cool\question_803_img.png">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Image Cool Theory Cool Maybe Cool Theory Cool\question_804_img.png">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Image Cool Theory Cool Maybe Cool Theory Cool\question_808_img.png">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Image Cool Theory Cool Maybe Cool Theory Cool\question_809_img.png">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Image Cool Theory Cool Maybe Cool Theory Cool\question_811_img.png">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Image Cool Theory Cool Maybe Cool Theory Cool\question_812_img.png">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Image Cool Theory Cool Maybe Cool Theory Cool\question_821_img.png">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Image Cool Theory Cool Maybe Cool Theory Cool\question_823_img.png">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Image Cool Theory Cool Maybe Cool Theory Cool\question_827_img.png">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Image Cool Theory Cool Maybe Cool Theory Cool\question_828_img.png">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Image Cool Theory Cool Maybe Cool Theory Cool\question_829_img.png">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Image Cool Theory Cool Maybe Cool Theory Cool\question_82_img.png">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Image Cool Theory Cool Maybe Cool Theory Cool\question_830_img.png">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Image Cool Theory Cool Maybe Cool Theory Cool\question_831_img.png">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Image Cool Theory Cool Maybe Cool Theory Cool\question_833_img.png">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Image Cool Theory Cool Maybe Cool Theory Cool\question_834_img.png">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Image Cool Theory Cool Maybe Cool Theory Cool\question_840_img.png">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Image Cool Theory Cool Maybe Cool Theory Cool\question_845_img.png">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Image Cool Theory Cool Maybe Cool Theory Cool\question_847_img.png">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Image Cool Theory Cool Maybe Cool Theory Cool\question_849_img.png">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Image Cool Theory Cool Maybe Cool Theory Cool\question_84_img.png">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Image Cool Theory Cool Maybe Cool Theory Cool\question_851_img.png">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Image Cool Theory Cool Maybe Cool Theory Cool\question_859_img.png">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Image Cool Theory Cool Maybe Cool Theory Cool\question_861_img.png">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Image Cool Theory Cool Maybe Cool Theory Cool\question_868_img.png">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Image Cool Theory Cool Maybe Cool Theory Cool\question_869_img.png">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Image Cool Theory Cool Maybe Cool Theory Cool\question_873_img.png">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Image Cool Theory Cool Maybe Cool Theory Cool\question_877_img.png">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Image Cool Theory Cool Maybe Cool Theory Cool\question_880_img.png">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Image Cool Theory Cool Maybe Cool Theory Cool\question_881_img.png">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Image Cool Theory Cool Maybe Cool Theory Cool\question_882_img.png">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Image Cool Theory Cool Maybe Cool Theory Cool\question_884_img.png">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Image Cool Theory Cool Maybe Cool Theory Cool\question_887_img.png">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Image Cool Theory Cool Maybe Cool Theory Cool\question_888_img.png">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Image Cool Theory Cool Maybe Cool Theory Cool\question_891_img.png">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Image Cool Theory Cool Maybe Cool Theory Cool\question_892_img.png">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Image Cool Theory Cool Maybe Cool Theory Cool\question_894_img.png">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Image Cool Theory Cool Maybe Cool Theory Cool\question_896_img.png">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Image Cool Theory Cool Maybe Cool Theory Cool\question_898_img.png">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Image Cool Theory Cool Maybe Cool Theory Cool\question_899_img.png">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Image Cool Theory Cool Maybe Cool Theory Cool\question_8_img.png">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Image Cool Theory Cool Maybe Cool Theory Cool\question_900_img.png">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Image Cool Theory Cool Maybe Cool Theory Cool\question_901_img.png">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Image Cool Theory Cool Maybe Cool Theory Cool\question_903_img.png">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Image Cool Theory Cool Maybe Cool Theory Cool\question_906_img.png">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Image Cool Theory Cool Maybe Cool Theory Cool\question_909_img.png">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Image Cool Theory Cool Maybe Cool Theory Cool\question_910_img.png">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Image Cool Theory Cool Maybe Cool Theory Cool\question_914_img.png">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Image Cool Theory Cool Maybe Cool Theory Cool\question_916_img.png">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Image Cool Theory Cool Maybe Cool Theory Cool\question_917_img.png">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Image Cool Theory Cool Maybe Cool Theory Cool\question_918_img.png">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Image Cool Theory Cool Maybe Cool Theory Cool\question_919_img.png">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Image Cool Theory Cool Maybe Cool Theory Cool\question_920_img.png">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Image Cool Theory Cool Maybe Cool Theory Cool\question_923_img.png">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Image Cool Theory Cool Maybe Cool Theory Cool\question_925_img.png">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Image Cool Theory Cool Maybe Cool Theory Cool\question_926_img.png">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Image Cool Theory Cool Maybe Cool Theory Cool\question_927_img.png">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Image Cool Theory Cool Maybe Cool Theory Cool\question_928_img.png">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Image Cool Theory Cool Maybe Cool Theory Cool\question_930_img.png">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Image Cool Theory Cool Maybe Cool Theory Cool\question_931_img.png">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Image Cool Theory Cool Maybe Cool Theory Cool\question_932_img.png">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Image Cool Theory Cool Maybe Cool Theory Cool\question_933_img.png">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Image Cool Theory Cool Maybe Cool Theory Cool\question_934_img.png">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Image Cool Theory Cool Maybe Cool Theory Cool\question_937_img.png">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Image Cool Theory Cool Maybe Cool Theory Cool\question_938_img.png">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Image Cool Theory Cool Maybe Cool Theory Cool\question_940_img.png">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Image Cool Theory Cool Maybe Cool Theory Cool\question_943_img.png">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Image Cool Theory Cool Maybe Cool Theory Cool\question_944_img.png">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Image Cool Theory Cool Maybe Cool Theory Cool\question_945_img.png">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Image Cool Theory Cool Maybe Cool Theory Cool\question_947_img.png">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Image Cool Theory Cool Maybe Cool Theory Cool\question_948_img.png">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Image Cool Theory Cool Maybe Cool Theory Cool\question_951_img.png">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Image Cool Theory Cool Maybe Cool Theory Cool\question_957_img.png">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Image Cool Theory Cool Maybe Cool Theory Cool\question_958_img.png">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Image Cool Theory Cool Maybe Cool Theory Cool\question_962_img.png">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Image Cool Theory Cool Maybe Cool Theory Cool\question_968_img.png">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Image Cool Theory Cool Maybe Cool Theory Cool\question_96_img.png">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Image Cool Theory Cool Maybe Cool Theory Cool\question_970_img.png">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Image Cool Theory Cool Maybe Cool Theory Cool\question_971_img.png">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Image Cool Theory Cool Maybe Cool Theory Cool\question_973_img.png">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Image Cool Theory Cool Maybe Cool Theory Cool\question_974_img.png">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Image Cool Theory Cool Maybe Cool Theory Cool\question_982_img.png">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Image Cool Theory Cool Maybe Cool Theory Cool\question_983_img.png">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Image Cool Theory Cool Maybe Cool Theory Cool\question_984_img.png">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Image Cool Theory Cool Maybe Cool Theory Cool\question_985_img.png">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Image Cool Theory Cool Maybe Cool Theory Cool\question_986_img.png">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Image Cool Theory Cool Maybe Cool Theory Cool\question_987_img.png">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Image Cool Theory Cool Maybe Cool Theory Cool\question_988_img.png">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Image Cool Theory Cool Maybe Cool Theory Cool\question_989_img.png">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Image Cool Theory Cool Maybe Cool Theory Cool\question_98_img.png">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Image Cool Theory Cool Maybe Cool Theory Cool\question_990_img.png">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Image Cool Theory Cool Maybe Cool Theory Cool\question_991_img.png">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Image Cool Theory Cool Maybe Cool Theory Cool\question_992_img.png">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Image Cool Theory Cool Maybe Cool Theory Cool\question_993_img.png">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Image Cool Theory Cool Maybe Cool Theory Cool\question_994_img.png">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Image Cool Theory Cool Maybe Cool Theory Cool\question_997_img.png">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Image Cool Theory Cool Maybe Cool Theory Cool\question_99_img.png">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="questions_and_answers.txt">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="TheoryAppIcon.ico" />
+  </ItemGroup>
+  <ItemGroup>
+    <BootstrapperPackage Include=".NETFramework,Version=v4.7.2">
+      <Visible>False</Visible>
+      <ProductName>Microsoft .NET Framework 4.7.2 %28x86 and x64%29</ProductName>
+      <Install>true</Install>
+    </BootstrapperPackage>
+    <BootstrapperPackage Include="Microsoft.Net.Framework.3.5.SP1">
+      <Visible>False</Visible>
+      <ProductName>.NET Framework 3.5 SP1</ProductName>
+      <Install>false</Install>
+    </BootstrapperPackage>
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+</Project>
