@@ -178,6 +178,7 @@ namespace Theory
                         }
                     }
                 }
+                File.WriteAllLines(filePath, lines);
             }
             catch (Exception ex)
             {

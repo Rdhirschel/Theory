@@ -15,6 +15,7 @@ namespace Theory
         public TheoryApp()
         {
             InitializeComponent();
+            WindowState = FormWindowState.Maximized;
             Forms.Display = Display;
             Display.Controls.Add(Forms.main);
             Forms.main.Dock = DockStyle.Fill;
@@ -66,6 +67,11 @@ namespace Theory
                     GlobalVariables.flag = true;
                 }
             }
+        }
+
+        private void Display_Paint(object sender, PaintEventArgs e)
+        {
+
         }
     }
     public static class Forms
